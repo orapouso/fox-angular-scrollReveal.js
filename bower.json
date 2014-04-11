@@ -1,7 +1,7 @@
 {
   "author": "Rafael Raposo",
   "name": "fox-angular-scrollReveal.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Angular directive to allow the use of scrollReveal.js project",
   "main": "./dist/fox-angular-scrollReveal.js",
   "dependencies": {
