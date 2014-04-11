@@ -1,7 +1,7 @@
 {
-  "author": "Rafael Raposo",
   "name": "fox-angular-scrollReveal.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "author": "Rafael Raposo",
   "description": "Angular directive to allow the use of scrollReveal.js project",
   "main": "./dist/fox-angular-scrollReveal.js",
   "dependencies": {
@@ -10,5 +10,16 @@
   },
   "devDependencies": {
     "angular-mocks": "~1.2.15"
-  }
+  },
+  "keywords": [ "angular", "scrollReveal.js" ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests",
+    "Gruntfile.js"
+  ]
 }

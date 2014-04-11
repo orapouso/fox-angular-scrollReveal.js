@@ -1,6 +1,6 @@
 {
   "name": "fox-angular-scrollReveal.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular directive to allow the use of scrollReveal.js project",
   "keywords": [ "angular", "scrollReveal.js" ],
   "homepage": "https://github.com/orapouso/fox-angular-scrollReveal.js",
