@@ -31,11 +31,11 @@ Basic Usage
 -----------
 Needs a custom attribute on the container of all elements so it can start the controller. With that you can also inject your custom defaults.
 ```html
-<div data-scroll-reveal-container="{ custom defaults }">
+<div data-sr-container="{ custom defaults }">
   <!-- Same as scrollReveal's basic usage. -->
-  <div data-scroll-reveal="enter left and move 50px over 1.33s"> Foo </div>
-  <div data-scroll-reveal="enter from the bottom after 1s"> Bar </div>
-  <div data-scroll-reveal="wait 2.5s and then ease-in-out 100px"> Baz </div>
+  <div data-sr="enter left and move 50px over 1.33s"> Foo </div>
+  <div data-sr="enter from the bottom after 1s"> Bar </div>
+  <div data-sr="wait 2.5s and then ease-in-out 100px"> Baz </div>
 </div>
 ```
 
@@ -50,6 +50,7 @@ To Julian for this awesome library
 
 This directive was inspired by [angular-masonry](https://github.com/passy/angular-masonry)
 
+### [Demo and code example] (http://plnkr.co/edit/HTYndu?p=preview)
 
 License
 -------

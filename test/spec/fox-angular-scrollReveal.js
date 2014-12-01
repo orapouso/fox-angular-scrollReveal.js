@@ -18,12 +18,14 @@ describe('scrollReveal.js Directives', function () {
 
   it('basic', function () {
     createContainer(
-      '<div data-scroll-reveal-container>'+
-        '<div class="t1" data-scroll-reveal="enter left and move 50px over 1.33s">test 1</div>'+
+      '<div data-sr-container>'+
+        '<div class="t1" data-sr="enter left and move 50px over 0.5s">test 1</div>'+
       '</div>'
     );
 
-    $to.flush();
-    expect(element[0].querySelector('.t1').style.cssText).toBe('-webkit-transform: translateX(0px); opacity: 1; -webkit-transition-property: -webkit-transform, opacity; -webkit-transition-duration: 1.33s, 1.33s; -webkit-transition-timing-function: ease-in-out, ease-in-out; -webkit-transition-delay: 0s, 0s; -webkit-perspective: 1000; -webkit-backface-visibility: hidden; ');
+    jasmine.Clock.useMock();
+    jasmine.Clock.tick(501);
+
+    expect(element[0].querySelector('.t1').style.cssText).toBe('visibility: visible; -webkit-transform: translateX(0px) scale(1); opacity: 1; -webkit-transition-property: -webkit-transform, opacity; -webkit-transition-duration: 0.5s, 0.5s; -webkit-transition-timing-function: ease, ease; -webkit-transition-delay: 0s, 0s; -webkit-perspective: 1000; -webkit-backface-visibility: hidden; ');
   });
 });

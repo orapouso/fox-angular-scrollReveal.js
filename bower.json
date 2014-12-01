@@ -5,11 +5,11 @@
   "description": "Angular directive to allow the use of scrollReveal.js project",
   "main": "./dist/fox-angular-scrollReveal.js",
   "dependencies": {
-    "angular": "~1.2.15",
-    "scrollReveal.js": "~0.1.2"
+    "angular": "~1.3.0",
+    "scrollReveal.js": "~2.1.0"
   },
   "devDependencies": {
-    "angular-mocks": "~1.2.15"
+    "angular-mocks": "~1.3.0"
   },
   "keywords": [ "angular", "scrollReveal.js" ],
   "license": "MIT",
