@@ -5,7 +5,7 @@
     '$timeout',
     function ($scope, $timeout) {
       var timeout, self = this;
-      var defaultOpts = { init: true };
+      var defaultOpts = {};
       this.setOpts = function (opts) {
         angular.extend(defaultOpts, opts || {});
         if (!this.scrollReveal) {
@@ -21,24 +21,24 @@
           $timeout(function () {
             $scope.$emit('scrollReveal.init');
             self.scrollReveal.init();
-          }, 1000);
+          }, 50);
         }, 30);
       };
     }
-  ]).directive('scrollRevealContainer', function () {
+  ]).directive('srContainer', function () {
     return {
       retrict: 'EA',
       controller: 'ScrollRevealCtrl',
       link: {
         pre: function (scope, element, attrs, ctrl) {
-          ctrl.setOpts(angular.fromJson(attrs.scrollRevealContainer || '{}'));
+          ctrl.setOpts(angular.fromJson(attrs.srContainer || '{}'));
         }
       }
     };
-  }).directive('scrollReveal', function () {
+  }).directive('sr', function () {
     return {
       retrict: 'A',
-      require: '^scrollRevealContainer',
+      require: '^srContainer',
       link: function link(scope, element, attrs, ctrl) {
         var index;
         ctrl.scheduleInit();
