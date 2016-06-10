@@ -6,7 +6,7 @@
   "main": "./dist/fox-angular-scrollReveal.js",
   "dependencies": {
     "angular": "~1.3.0",
-    "scrollReveal.js": "~2.1.0"
+    "scrollReveal": "~2.3.2"
   },
   "devDependencies": {
     "angular-mocks": "~1.3.0"
